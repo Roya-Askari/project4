@@ -35,8 +35,8 @@ int main() {
 
   auto n_foods = filter_food_vector(*all_foods, 0, INT_MAX, n);
   assert( n_foods );
-  assert( n_foods->size() <= n );
-  
+  assert( int(n_foods->size()) <= n );
+
   double elapsed;
   Timer timer;
 
